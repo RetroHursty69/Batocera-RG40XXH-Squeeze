@@ -1,0 +1,29 @@
+<!--
+theme name:     Dreambot RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+<feature supported="carousel">
+   <view name="system"> 
+      
+       <image name="background267" extra="true">
+	     <path>./_inc/floors/2.png</path>       		 
+      </image>
+       
+   </view>
+
+   <view name="detailed, video, gamecarousel, grid, basic">     
+       <image name="background267" extra="true">
+	     <path>./_inc/floors/2.png</path> 	 
+      </image>               
+	</view>	    
+   
+</feature>
+
+ 
+</theme>

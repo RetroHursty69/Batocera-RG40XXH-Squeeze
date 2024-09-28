@@ -1,0 +1,55 @@
+<!--
+theme name:     Squeeze RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+   <formatVersion>7</formatVersion> 
+   
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <pos>-0.1 -0.008</pos>
+        <logoAlignment>center</logoAlignment>         
+        <size>1.2 1</size>
+        <logoSize>0.6 0.6</logoSize>        
+        <logoScale>1.03</logoScale>
+        <zIndex>4</zIndex>          
+        <color>00000000</color>
+        <maxLogoCount>3</maxLogoCount>       
+      </carousel>              
+
+		<image name="logo">
+		<linearSmooth>true</linearSmooth>
+			<storyboard event="activate">
+				<animation property="x" to="2.4" begin="2000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="x" to="2.4" begin="2000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="x" to="2.4" begin="2000" duration="500" mode="EaseIn"/>
+			</storyboard>
+		</image>
+
+       <image name="logo">
+	     <path>./_inc/wheels3/${system.theme}.png</path>
+       </image>           		
+
+       <image name="logovideooff" extra="true">
+	     <path>./_inc/wheels3/${system.theme}.png</path>
+        <pos>0.313 0.1854</pos>
+        <logoAlignment>center</logoAlignment>         
+        <size>0.378125 0.6229</size>
+        <zIndex>14</zIndex>        	     
+       </image>
+            
+   </view>
+</feature>
+   
+  
+</theme>
